@@ -50,12 +50,12 @@ public class Chatroom extends Activity{
 		mconversation=(ListView)findViewById(R.id.in);
 		mconversation.setAdapter(mconvarrayadapter);
 		
-		SharedPreferences share=this.getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
-		shared_nam=share.getString("pnum","");
+     SharedPreferences share=this.getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
+	shared_nam=share.getString("pnum","");
+
+	shared_uid=appPreference.getUserId();
 				
-		shared_uid=appPreference.getUserId();
-				
-		tnam.setText("Chat with "+shared_nam);
+	tnam.setText("Chat with "+shared_nam);
 		DateFormat df = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
 		Calendar calobj = Calendar.getInstance();
 		//System.out.println(df.format(calobj.getTime()));

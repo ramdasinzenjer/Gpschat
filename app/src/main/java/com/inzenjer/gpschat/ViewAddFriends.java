@@ -230,13 +230,14 @@ public class ViewAddFriends extends Activity{
 		            aprlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 		               @Override
 		               public void onItemClick(AdapterView<?> parent, View view,
-		                                            int position, long id) {  
+		                                            int position, long id) {
+						   Log.e("onclick", "ets");
 		            	 String valuephn=oslist_apr.get(+position).get("phone");
 		            	 
 		            //  Toast.makeText(getApplicationContext(), ""+valuephn, Toast.LENGTH_SHORT).show();
 		              
-		              SharedPreferences sharv=getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
-						SharedPreferences.Editor de=sharv.edit();
+		              SharedPreferences share=getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
+						SharedPreferences.Editor de=share.edit();
 						de.putString("pnum", valuephn);
 						de.commit();
 		            Intent i=new Intent(getApplicationContext(),Chatroom.class);

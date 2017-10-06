@@ -8,7 +8,7 @@ public interface Constants {
     String REGISTER_MESSAGE="Register in...";
 
   //Urls
-    String BASE_URL="http://192.168.43.28/gpchat/";   
+    String BASE_URL="https://inzenjerdemo.000webhostapp.com/gpschat/";
    
     String REGISTER_URL=BASE_URL+"userreg.php?";
     String LOGIN_URL=BASE_URL+"login.php?";
