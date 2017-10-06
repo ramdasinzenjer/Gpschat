@@ -33,7 +33,7 @@ public class ViewAddFriends extends Activity{
 	String response1,response2,response3;
 	
 	String sname,sphone,smail,saddress,spass; String sname1,sphone1,smail1,saddress1,spass1;
-	
+	public static String pname;
 	ApplicationPreference appPref;
 	
 	String valuefrndnum;
@@ -236,10 +236,11 @@ public class ViewAddFriends extends Activity{
 		            	 
 		            //  Toast.makeText(getApplicationContext(), ""+valuephn, Toast.LENGTH_SHORT).show();
 		              
-		              SharedPreferences share=getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
-						SharedPreferences.Editor de=share.edit();
-						de.putString("pnum", valuephn);
-						de.commit();
+		              //SharedPreferences share=getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
+						//SharedPreferences.Editor de=share.edit();
+						//de.putString("pnum", valuephn);
+						//de.commit();
+				       pname= valuephn;
 		            Intent i=new Intent(getApplicationContext(),Chatroom.class);
 		            startActivity(i);
 		               
