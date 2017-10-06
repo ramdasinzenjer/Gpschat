@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#2ECC71" >
+
+    <EditText
+        android:id="@+id/etphn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgic"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:background="#fff"  />
+
+    <EditText
+        android:id="@+id/etps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etphn"
+        android:layout_below="@+id/etphn"
+        android:layout_marginTop="31dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/bt_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etps"
+        android:layout_alignRight="@+id/etps"
+        android:layout_below="@+id/etps"
+        android:layout_marginTop="26dp"
+        android:background="#1D8348"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="LOG IN" />
+
+    <TextView
+        android:id="@+id/mtxtreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_lg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="New User? Click here to Sign Up." />
+
+    <TextView
+        android:id="@+id/mxt00001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="gChat"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgic"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/mxt00001"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+   
+</RelativeLayout>

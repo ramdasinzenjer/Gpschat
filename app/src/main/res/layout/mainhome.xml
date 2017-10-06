@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2ECC71" >
+
+    <Button
+        android:id="@+id/mbt_locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mbt_frnds"
+        android:layout_alignRight="@+id/mbt_frnds"
+        android:layout_below="@+id/mbt_frnds"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:text="Locate Friends"
+        android:textColor="#fff"
+        android:background="#1D8348"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mbt_chatView"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="49dp"
+        android:padding="10dp"
+        android:text="Service Settings :"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBoxlcserv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mbt_chatView"
+        android:layout_below="@+id/txt_service"
+        android:layout_marginTop="12dp"
+        android:text="Location Service"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/CheckBoxlcshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxlcserv"
+        android:layout_below="@+id/checkBoxlcserv"
+        android:layout_marginTop="17dp"
+        android:text="Share My Location"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/mbt_chatView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mbt_locate"
+        android:layout_alignRight="@+id/mbt_locate"
+        android:layout_below="@+id/mbt_locate"
+        android:layout_marginTop="40dp"
+        android:background="#1D8348"
+        android:padding="10dp"
+        android:text="Friend Requests"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/mbt_frnds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="#1D8348"
+        android:padding="10dp"
+        android:text="View and Add Friends"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_emergency"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/CheckBoxlcshare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/e_help" />
+
+</RelativeLayout>

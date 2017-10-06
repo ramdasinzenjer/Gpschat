@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#2ECC71" >
+
+    <EditText
+        android:id="@+id/etrem_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/bt_addenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etrem_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:padding="10dp"
+        android:text="Add/Update Number"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_enum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etrem_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:padding="10dp"
+        android:text="Emergency Number"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</RelativeLayout>
