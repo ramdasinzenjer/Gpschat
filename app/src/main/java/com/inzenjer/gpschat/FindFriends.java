@@ -10,6 +10,7 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.inzenjer.gpschat.connnectors.Connectivity;
 import com.inzenjer.gpschat.connnectors.Constants;
 import android.animation.IntEvaluator;
@@ -44,7 +45,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-@SuppressLint("NewApi") public class FindFriends extends FragmentActivity{
+@SuppressLint("NewApi") public class FindFriends extends FragmentActivity implements OnMapReadyCallback{
 	
 	GoogleMap googleMap;
 	MarkerOptions markerOptions;
@@ -71,7 +72,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 		SupportMapFragment supportMapFragment = (SupportMapFragment) 
 				getSupportFragmentManager().findFragmentById(R.id.map);
 		// Getting a reference to the map
-		googleMap = supportMapFragment.getMap();
+		supportMapFragment.getMapAsync(this);
 		
 		// Getting reference to btn_find of the layout activity_main
         Button btn_find = (Button) findViewById(R.id.btn_find);
@@ -89,7 +90,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 		         Toast.makeText(getApplicationContext(), ""+sl, Toast.LENGTH_SHORT).show();
 			}
 		});
-        googleMap.setMyLocationEnabled(true);
+      // googleMap.setMyLocationEnabled(true);
         
         
        
@@ -116,8 +117,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 		btn_find.setOnClickListener(findClickListener);	
 		
 	}
-	
-	
+
+	@Override
+	public void onMapReady(GoogleMap googleMap) {
+		googleMap=googleMap;
+	}
+
+
 	private class GeocoderTask extends AsyncTask<String, Void, List<Address>>{
 
 		@Override

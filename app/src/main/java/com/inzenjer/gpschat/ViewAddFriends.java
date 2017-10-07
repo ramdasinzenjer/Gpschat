@@ -236,11 +236,11 @@ public class ViewAddFriends extends Activity{
 		            	 
 		            //  Toast.makeText(getApplicationContext(), ""+valuephn, Toast.LENGTH_SHORT).show();
 		              
-		              //SharedPreferences share=getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
-						//SharedPreferences.Editor de=share.edit();
-						//de.putString("pnum", valuephn);
-						//de.commit();
-				       pname= valuephn;
+		              /*SharedPreferences share=getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
+						SharedPreferences.Editor de=share.edit();
+						de.putString("pnum", valuephn);
+						de.commit();*/
+				       config.name= valuephn;
 		            Intent i=new Intent(getApplicationContext(),Chatroom.class);
 		            startActivity(i);
 		               

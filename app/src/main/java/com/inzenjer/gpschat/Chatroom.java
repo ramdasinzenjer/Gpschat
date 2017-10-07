@@ -52,7 +52,7 @@ public class Chatroom extends Activity{
 		
      //SharedPreferences share=this.getSharedPreferences("mfrndid", MODE_WORLD_READABLE);
 	//shared_nam=share.getString("pnum","");
-        shared_nam=ViewAddFriends.pname;
+        shared_nam=config.name;
 	shared_uid=appPreference.getUserId();
 				
 	tnam.setText("Chat with "+shared_nam);
